@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        table {
+            margin: auto;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            width: 10vw;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Web App</h1>
+
+
+    <input type="text" placeholder="Employee Name" id="search_field">
+    <button onclick="searchEmployees()">Search</button>
+
+    <table>
+        <tr>
+            <th>Row Id</th>
+            <th>Employee Id</th>
+            <th>Name</th>
+            <th>Organization</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+        </tr>
+        {% for task in tasks %}
+        <tr>
+            <td>{{ task.0 }}</td>
+            <td>{{ task.1 }}</td>
+            <td class="name">{{ task.2 }}</td>
+            <td>{{ task.3 }}</td>
+            <td>{{ task.4 }}</td>
+            <td>{{ task.5 }}</td>
+            {% if task.5 == 'now' %}
+            <td><a href="{{ url_for('edit', id=loop.index0) }}">Edit</a></td>
+            {% endif %}
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+<script>
+    function searchEmployees() {
+        var nameToFind = document.getElementById('search_field').value.toLowerCase();
+
+        var names = document.getElementsByClassName('name')
+        for (var i = 0; i < names.length; i++) {
+            var tableChild = names[i];
+            empName = tableChild.textContent.toLowerCase();
+            if (!empName.includes(nameToFind)) {
+                tableChild.parentElement.style.display = "none";
+            } else {
+                tableChild.parentElement.style.display = '';
+            }
+        }
+    }
+</script>
+
+</html>

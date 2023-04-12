@@ -1,0 +1,13 @@
+1- go to folder where code is -> right click -> run git bash here 
+
+repo on local
+	2- git init (initialize repo)
+	3- .gitignore (to add files not to be added to repo) (optional)
+	4- git add .
+	5- git commit -m 'your message'
+	
+link and push to remote (github)
+	6- git remote add origin https://github.com/hodzy/interview.git
+	7- git branch -M main
+	8- git push -u origin main
+	

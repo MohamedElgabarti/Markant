@@ -1,0 +1,30 @@
+{% block content %}
+<h1>Edit Data</h1>
+<form method="POST">
+  <!-- <div>
+      <label for=0>Row Id:</label>
+      <input type="text" name=0 value="{{ row[0] }}" disabled>
+    </div> -->
+  <div>
+    <label for=1>Employee Id:</label>
+    <input type="text" name=1 value="{{ row[1] }}" disabled>
+  </div>
+  <div>
+    <label for=2>Name:</label>
+    <input type="text" name=2 value="{{ row[2] }}" required>
+  </div>
+  <div>
+    <label for=3>Organization:</label>
+    <input type="text" name=3 value="{{ row[3] }}" required>
+  </div>
+  <div>
+    <label for=4>Start Date:</label>
+    <input type="text" name=4 value="{{ row[4] }}" disabled>
+  </div>
+  <div>
+    <label for=5>End Date:</label>
+    <input type="text" name=5 value="{{ row[5] }}" disabled>
+  </div>
+  <button type="submit">Save Changes</button>
+</form>
+{% endblock %}

@@ -1,0 +1,17 @@
+0,1,Luke Skywalker,Human Resources,09.02.1978,09.02.1988
+1,1,Luke Skywalker,Sales,09.02.1988,09.02.1990
+2,1,Luke Skywalker,IT Department,09.02.1990,11.04.2023
+3,2,Darth Vaderrrrrr,Sales,09.02.1978,now
+4,3,Leia Organa,IT Department,09.02.1988,11.04.2023
+5,3,Leia Organa,Controlling,31.12.2000,25.01.2011
+6,3,Leia Organa,IT Department,25.01.2011,11.04.2023
+7,4,Yoda,Controlling,09.02.1978,now
+8,5,Owen Lars,Production,25.01.2011,25.01.2013
+9,5,Owen Lars,Facility Management,25.01.2013,13.04.2023
+10,6,Beru Whitesun lars,Facility Management,25.01.2015,13.04.2023
+11,7,Biggs Darklighter,Human Resources,25.01.2017,now
+12,8,Anakin Skywalker,Sales,25.01.2019,25.01.2021
+13,8,Anakin Skywalker,IT Department,25.01.2021,11.04.2023
+14,9,Han Solo,IT Department,25.01.2023,11.04.2023
+15,1,Luke Skywalker,Sales,11.04.2023,now
+16,5,Owen Lars,Facility Managements,13.04.2023,now
